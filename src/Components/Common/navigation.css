@@ -1,0 +1,59 @@
+:root {
+  --nav-color: rgb(32, 32, 32);
+  --nav-height: 80px;
+  --cvAuthor-color: white;
+  --cvAuthor-fontSize: 35px;
+}
+
+#navContainer {
+  background-color: var(--nav-color);
+  min-height: var(--nav-height);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#cvAuthor {
+  color: var(--cvAuthor-color);
+  font-family: "Caveat", cursive, sans-serif;
+  font-size: var(--cvAuthor-fontSize);
+  text-align: center;
+  font-weight: 400;
+}
+
+#menuButton{
+  cursor: pointer;
+}
+
+/*MEDIA QUERIES*/
+
+/*X-SMALL DEVICES PUBLICIDAD*/
+@media all and (max-width: 576px) {
+  #menuButton {
+    margin-top: 5px;
+    margin-bottom: 8px;
+  }
+  #cvAuthor {
+    margin-top: 8px;
+  }
+}
+
+/*SMALL DEVICES*/
+@media all and (min-width: 576px) and (max-width: 768px) {
+}
+
+/*MEDIUM DEVICES*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*LARGE DEVICES*/
+@media all and (min-width: 991px) and (max-width: 1200px) {
+}
+
+/*XTRA LARGE DEVICES*/
+@media all and (min-width: 1200px) {
+}

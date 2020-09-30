@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+import Navigation from "./Components/Common/Navigation";
+import Principal from "./Components/Principal";
+import HoneycombMenu from "./Components/Common/HoneycombMenu";
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigation showMenu={showMenu} setShowMenu={setShowMenu}></Navigation>
+      <CSSTransition
+        in={showMenu}
+        timeout={1000}
+        classNames="honeycombmenu"
+        unmountOnExit
+      >
+        <HoneycombMenu></HoneycombMenu>
+      </CSSTransition>
+      <Switch>
+        <Route exact path="/">
+          <Principal></Principal>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
