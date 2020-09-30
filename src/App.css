@@ -9,6 +9,7 @@
 
 .honeycombmenu-enter-active {
   transition: all var(--timeout) ease-in-out;
+  -webkit-transition: all var(--timeout) ease-in-out;
   opacity: 100%;
 }
 
@@ -18,6 +19,7 @@
 
 .honeycombmenu-exit-active {
   transition: all var(--timeout) ease-in-out;
+  -webkit-transition: all var(--timeout) ease-in-out;
   opacity: 0;
 }
 
