@@ -35,7 +35,7 @@ const Principal = () => {
       </div>
 
       <div className="d-flex flex-wrap mx-3 justify-content-around exoFont">
-      <article className="articlePrincipal col-9 shadow p-4 mt-3 bg-white rounded">
+      <article className="articlePrincipal col-sm-10 shadow p-4 mt-3 bg-white rounded">
         <h3 className="text-warning text-center">Informacion Basica <FontAwesomeIcon icon={faCommentDots} size="1x" /></h3>
         <hr />
         <p>
@@ -64,7 +64,7 @@ const Principal = () => {
           gráficos y capacidad analítica, entre otras aptitudes.{" "}
         </p>
       </article>
-      <article className="articlePrincipal col-9  shadow p-4 mt-3 bg-white rounded">
+      <article className="articlePrincipal col-sm-10  shadow p-4 mt-3 bg-white rounded">
         <h3 className="text-warning text-center">Experiencia <FontAwesomeIcon icon={faBriefcase} size="1x" /></h3>
         <hr />
         <Accordion defaultActiveKey="2">
