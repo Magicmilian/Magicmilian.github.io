@@ -1,5 +1,6 @@
 import React from "react";
 import "./principal.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCommentDots,
@@ -40,31 +41,56 @@ const Principal = () => {
             />
           </div>
           <div className="p-0 my-2 d-flex flex-row flex-wrap col-12 col-sm-2  justify-content-center">
-            <FontAwesomeIcon
-              className="my-2 col-3 col-sm-12"
-              icon={faFacebook}
-              size="3x"
-            />
-            <FontAwesomeIcon
-              className="my-2 col-3 col-sm-12"
-              icon={faInstagram}
-              size="3x"
-            />
-            <FontAwesomeIcon
-              className="my-2 col-3 col-sm-12"
-              icon={faGithub}
-              size="3x"
-            />
-            <FontAwesomeIcon
-              className="my-2 col-3 col-sm-12"
-              icon={faLinkedin}
-              size="3x"
-            />
+            <a
+              href="https://www.facebook.com/magicmilian"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialButtons my-2 col-3 col-sm-12 text-center text-decoration-none"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faFacebook} size="3x" />
+            </a>
+            <a
+              href="https://www.instagram.com/magicmilian/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialButtons my-2 col-3 col-sm-12 text-center text-decoration-none"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faInstagram} size="3x" />
+            </a>
+            <a
+              href="https://github.com/Magicmilian"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialButtons my-2 col-3 col-sm-12 text-center text-decoration-none"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faGithub} size="3x" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/roberto-maximiliano-diaz-huerta-51323a149"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialButtons my-2 col-3 col-sm-12 text-center text-decoration-none"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faLinkedin} size="3x" />
+            </a>
+
           </div>
         </div>
         <div className="col-12 col-md-6" id="titulos">
           <h1 className="my-4">Web developer</h1>
           <h1>Licenciado en Administracion</h1>
+          <div className="d-flex flex-wrap justify-content-center">
+            <Link to={`/contacto`} className="mainButtons my-3 mx-2 col-12 col-sm-5">
+              <p>CONTACTO</p>
+            </Link>
+            <a href="/" className="mainButtons my-3 mx-2 col-12 col-sm-5">
+              <p>INGLES</p>
+            </a>
+          </div>
         </div>
       </div>
 

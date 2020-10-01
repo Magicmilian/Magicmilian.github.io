@@ -13,6 +13,56 @@
   min-height: 90vh;
 }
 
+.mainButtons{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .65s;
+}
+
+.mainButtons p{
+  position: relative;
+  z-index: 2;
+}
+
+.mainButtons::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #49412b;
+  transition: all .65s;
+}
+
+.mainButtons:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.mainButtons:hover::after{
+  width: 100%;
+}
+
+.socialButtons{
+  transition: color .5s;
+  color: #333;
+}
+
+.socialButtons:hover{
+  color: #d01dd6;
+}
+
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
