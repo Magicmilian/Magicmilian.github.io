@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import Navigation from "./Components/Common/Navigation";
 import Principal from "./Components/Principal/Principal";
+import Skills from "./Components/Skills/Skills"
 import HoneycombMenu from "./Components/Common/HoneycombMenu";
 
 function App() {
@@ -23,6 +24,18 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Principal></Principal>
+        </Route>
+        <Route exact path="/skills">
+        <Skills></Skills>
+        </Route>
+        <Route exact path="/education">
+ 
+        </Route>
+        <Route exact path="/portfolio">
+
+        </Route>
+        <Route exact path="/contact">
+   
         </Route>
       </Switch>
     </Router>
