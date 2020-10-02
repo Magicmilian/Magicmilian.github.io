@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./principal.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,6 +17,9 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
 const PrincipalEN = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",

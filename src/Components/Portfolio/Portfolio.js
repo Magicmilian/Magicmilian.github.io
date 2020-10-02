@@ -1,8 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./portfolio.css";
 
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",

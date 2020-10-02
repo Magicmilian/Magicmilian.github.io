@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import ContactMe from "./ContactMe";
 import "./contacto.css";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
 const Contacto = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",

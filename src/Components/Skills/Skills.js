@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./skills.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,6 +27,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",

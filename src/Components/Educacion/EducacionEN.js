@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./educacion.css";
 
 const EducacionEN = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",
