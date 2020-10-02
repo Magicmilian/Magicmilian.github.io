@@ -32,7 +32,17 @@ function App() {
         classNames="honeycombmenu"
         unmountOnExit
       >
-        {englishLang === false ? <HoneycombMenu setShowMenu={setShowMenu} showMenu={showMenu}></HoneycombMenu> : <HoneycombMenuEN setShowMenu={setShowMenu} showMenu={showMenu}></HoneycombMenuEN>}
+        {englishLang === false ? (
+          <HoneycombMenu
+            setShowMenu={setShowMenu}
+            showMenu={showMenu}
+          ></HoneycombMenu>
+        ) : (
+          <HoneycombMenuEN
+            setShowMenu={setShowMenu}
+            showMenu={showMenu}
+          ></HoneycombMenuEN>
+        )}
       </CSSTransition>
       <Switch>
         <Route exact path="/">
@@ -52,11 +62,26 @@ function App() {
             <EducacionEN></EducacionEN>
           )}
         </Route>
-        <Route exact path="/portfolio">
-        {englishLang === false ? <Portfolio></Portfolio> : <PortfolioEN></PortfolioEN>}
+        <Route exact path="/projects">
+          {englishLang === false ? (
+            <Portfolio></Portfolio>
+          ) : (
+            <PortfolioEN></PortfolioEN>
+          )}
         </Route>
         <Route exact path="/contact">
-        {englishLang === false ? <Contacto></Contacto> : <ContactoEN></ContactoEN>}
+          {englishLang === false ? (
+            <Contacto></Contacto>
+          ) : (
+            <ContactoEN></ContactoEN>
+          )}
+        </Route>
+        <Route exact path="*">
+          {englishLang === false ? (
+            <Principal></Principal>
+          ) : (
+            <PrincipalEN></PrincipalEN>
+          )}
         </Route>
       </Switch>
       {englishLang === false ? <Footer></Footer> : <FooterEN></FooterEN>}

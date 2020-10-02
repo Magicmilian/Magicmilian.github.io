@@ -37,7 +37,7 @@ const HoneycombMenu = (props) => {
           </Link>
         </li>
         <li className="honeycomb-cell col-12">
-        <Link to={`/portfolio`} className="text-decoration-none" onClick={() => props.setShowMenu(!props.showMenu)}>
+        <Link to={`/projects`} className="text-decoration-none" onClick={() => props.setShowMenu(!props.showMenu)}>
           <img
             className="honeycomb-cell-img"
             src={process.env.PUBLIC_URL + "portfolio-honeycomb.jpg"}
