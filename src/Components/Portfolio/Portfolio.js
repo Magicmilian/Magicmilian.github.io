@@ -28,7 +28,7 @@ const Portfolio = () => {
                   <img
                     src={process.env.PUBLIC_URL + "project-rollingnews.jpg"}
                     className="card-img-top imgProject"
-                    alt="..."
+                    alt="Imagen de RollingNews"
                   ></img>
                 </div>
                 <div className="card-body">
@@ -64,7 +64,7 @@ const Portfolio = () => {
                   <img
                     src={process.env.PUBLIC_URL + "project-rollinggames.jpg"}
                     className="card-img-top imgProject"
-                    alt="..."
+                    alt="Imagen de Rolling Games"
                   ></img>
                 </div>
                 <div className="card-body">
@@ -99,7 +99,7 @@ const Portfolio = () => {
                   <img
                     src={process.env.PUBLIC_URL + "project-maravillosomundo.jpg"}
                     className="card-img-top imgProject"
-                    alt="..."
+                    alt="Imagen de Maravilloso Mundo"
                   ></img>
                 </div>
                 <div className="card-body">
@@ -123,7 +123,7 @@ const Portfolio = () => {
                   <img
                     src={process.env.PUBLIC_URL + "project-panaderiaCocu.jpg"}
                     className="card-img-top imgProject"
-                    alt="..."
+                    alt="Imagen de panaderia Cocu"
                   ></img>
                 </div>
                 <div className="card-body">
