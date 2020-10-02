@@ -1,6 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 
+
 const Portfolio = () => {
   const background = {
     backgroundImage: "url(/background.jpg)",
@@ -13,7 +14,7 @@ const Portfolio = () => {
       <div className="container py-5">
         <section className="mb-4">
           <p className="unicaFont portfolioTitle col-12">
-            Proyectos educativos
+            Proyectos
           </p>
           <div className="projectsContainer d-flex flex-wrap justify-content-around exoFont">
             <div className="card projectElement col-12 p-0">

@@ -84,7 +84,7 @@ const Principal = () => {
           <h1>Licenciado en Administracion</h1>
           <div className="d-flex flex-wrap justify-content-center">
             <Link
-              to={`/contacto`}
+              to={`/contact`}
               className="mainButtons my-3 mx-2 col-12 col-sm-5"
             >
               <p>CONTACTO</p>
