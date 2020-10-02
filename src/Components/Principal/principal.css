@@ -27,6 +27,8 @@
   text-align: center;
   position: relative;
   transition: all .65s;
+  background: transparent;
+  cursor: pointer;
 }
 
 .mainButtons p{

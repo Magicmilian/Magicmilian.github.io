@@ -16,7 +16,7 @@ import {
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
-const Principal = (props) => {
+const PrincipalEN = (props) => {
   const background = {
     backgroundImage: "url(/background.jpg)",
     minHeight: "calc(100vh - 80px)",
@@ -81,19 +81,19 @@ const Principal = (props) => {
         </div>
         <div className="col-12 col-md-6" id="titulos">
           <h1 className="my-4">Full Stack developer</h1>
-          <h1>Licenciado en Administracion</h1>
+          <h1>Degree in Administration</h1>
           <div className="d-flex flex-wrap justify-content-center">
             <Link
               to={`/contact`}
               className="mainButtons my-3 mx-2 col-12 col-sm-5"
             >
-              <p>CONTACTO</p>
+              <p>CONTACT ME</p>
             </Link>
             <div
-              onClick={() => props.setEnglishLang(true)}
+              onClick={() => props.setEnglishLang(false)}
               className="mainButtons my-3 mx-2 col-12 col-sm-5"
             >
-              <p>ENGLISH</p>
+              <p>ESPAÑOL</p>
             </div>
           </div>
         </div>
@@ -101,70 +101,66 @@ const Principal = (props) => {
       <div className="d-flex flex-wrap container justify-content-around exoFont">
         <article className="articlePrincipal col-sm-12 shadow py-4 my-4 bg-white rounded">
           <h3 className="text-warning text-center">
-            Informacion Basica{" "}
-            <FontAwesomeIcon icon={faCommentDots} size="1x" />
+            Basic Information <FontAwesomeIcon icon={faCommentDots} size="1x" />
           </h3>
           <hr />
           <p>
-            <strong>Edad:</strong> {age} años
+            <strong>Age:</strong> {age} years
           </p>
           <p>
             <strong>Email:</strong> diazhuerta93@gmail.com
           </p>
           <p>
-            <strong>Telefono:</strong> +54 381 6150013
+            <strong>Phone number:</strong> +54 381 6150013
           </p>
           <p>
-            <strong>Ubicacion:</strong> San Miguel de Tucuman, Tucuman,
-            Argentina
+            <strong>Location:</strong> San Miguel de Tucuman, Tucuman, Argentina
           </p>
           <h3 className="text-warning text-center">
-            Mi historia <FontAwesomeIcon icon={faGrinStars} size="1x" />
+            My story <FontAwesomeIcon icon={faGrinStars} size="1x" />
           </h3>
           <hr />
           <p className="text-justify">
             {" "}
-            Tras recibirme de administrador de empresas, y en base a las
-            diversas experiencias que tuve, decidi aprender programacion y me
-            capacite como Full Stack (MERN). Considero que ambas ramas del
-            conocimiento se complementan, ya que cuento con el punto de vista de
-            las empresas, y con la capacidad de resolucion de un desarrollador.
-            Amante de la tecnología y la innovación. Cuento con experiencia en
-            el trato a clientes, presentación de resultados
-            mediante métodos gráficos y capacidad analítica, entre otras
-            aptitudes.{" "}
+            After graduating with a degree in business administration, and based
+            on the various experiences I had, I decided to learn programming and
+            train as Full Stack (MERN). I consider that both branches of
+            knowledge complement each other, since I have the point of view of
+            companies, with the resolution capacity of a developer. Lover of
+            technology and innovation. I have experience in customer management,
+            results presentation through graphical methods and analytical
+            capacity, among others aptitudes.{" "}
           </p>
         </article>
         <article className="articlePrincipal col-sm-12  shadow p-4 my-4 bg-white rounded">
           <h3 className="text-warning text-center">
-            Experiencia <FontAwesomeIcon icon={faBriefcase} size="1x" />
+            Experience <FontAwesomeIcon icon={faBriefcase} size="1x" />
           </h3>
           <hr />
           <Accordion defaultActiveKey="2">
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="2">
                 <p className="mb-0">
-                  <strong>Supervisor de cobranzas</strong>
+                  <strong>Collections Supervisor</strong>
                 </p>
                 <p className="mb-0">RECUPERO CREDITICIO BY OSTENGO</p>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="2">
                 <Card.Body>
                   <p className="mb-0 mt-0">
-                    <small>Julio 2019 - Diciembre 2019</small>
+                    <small>July 2019 - December 2019</small>
                   </p>
                   <hr />
                   <p className="text-justify">
-                    Durante mi tiempo desempeñandome en la posicion, estuve a
-                    cargo de la planificación e implementacion de estrategias
-                    para la gestion de cobranzas sobre titulares de varias
-                    empresas clientes del rubro retail, elaboracion de informes
-                    sobre los resultados obtenidos y composicion de cartera, de
-                    la administracion del equipo de trabajo y de la relacion
-                    diaria con las empresas cliente. Participe activamente en el
-                    diseño y correccion de planillas automatizadas de calculo de
-                    mora y punitorios, como tambien métodos para agilizar
-                    actividades rutinarias.
+                    During my time serving in the position, I was in charge of
+                    planning and implementing strategies for the management of
+                    collections on holders of several client companies of the
+                    retail sector, preparation of reports on the results
+                    obtained and portfolio composition, management of the work
+                    team and daily relationship with client companies. Actively
+                    participate in design and correction of automated
+                    spreadsheets of arrears and penalties, as well as methods to
+                    expedite routine activities.
                   </p>
                   <p>
                     Skills:
@@ -187,29 +183,28 @@ const Principal = (props) => {
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="1">
                 <p className="mb-0">
-                  <strong>Asesor de riesgo</strong>
+                  <strong>Risk Advisor</strong>
                 </p>
                 <p className="mb-0">DELOITTE ARGENTINA</p>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>
                   <p className="mb-0 mt-0">
-                    <small>Noviembre 2017 - Marzo 2019</small>
+                    <small>November 2017 - March 2019</small>
                   </p>
                   <hr />
                   <p className="text-justify">
-                    En la compañía, pude realizar la siguiente lista de
-                    actividades para diversos clientes pertenecientes a las
-                    industrias de Energía, Farmacéutica, Venta Mayorista y
-                    minorista, entre otros: Análisis de riesgos. Relevamiento de
-                    ciclos de negocio, y procesos de IT. Documentación detallada
-                    de procesos. Análisis sobre desarrollo, implementación y
-                    eficacia operativa sobre controles. Validación de
-                    observaciones detectadas. Desarrollo de presentaciones en
-                    base a conclusiones. Testeo de registraciones contables
-                    (Journal Entry Testing). Recuento de inventarios.
-                    Verificación de cumplimiento de políticas. Gestión de
-                    requerimientos y solicitudes.
+                    In the company, I was able to make the following list of
+                    activities for various clients belonging to the Energy,
+                    Pharmaceutical, Wholesale and retailer, among others: Risk
+                    analysis. Survey of business cycles, and IT processes.
+                    Detailed documentation of processes. Analysis on
+                    development, implementation and operational effectiveness
+                    over controls. Validation of observations detected.
+                    Development of presentations based on conclusions. Testing
+                    of accounting records (Journal Entry Testing). Inventory
+                    count. Policy compliance verification. Management
+                    requirements and requests.
                   </p>
                   <p>
                     Skills:
@@ -240,21 +235,21 @@ const Principal = (props) => {
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <p className="mb-0">
-                  <strong>Agente de servicio tecnico (Pasantia)</strong>
+                  <strong>Technical service agent (Internship)</strong>
                 </p>
                 <p className="mb-0">DISCAR SC</p>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                   <p className="mb-0 mt-0">
-                    <small>2010 - Menos de un año</small>
+                    <small>2010 - Less than a year</small>
                   </p>
                   <hr />
                   <p className="text-justify">
-                    Pasantía realizada durante 3 meses en el año 2010.
-                    Responsabilidades: realizacion de actividades a domicilio
-                    vinculadas a la instalación y servicio técnico de
-                    dispositivos LaPos en San Miguel de Tucumán.
+                    Internship carried out for 3 months in 2010.
+                    Responsibilities: carrying out activities at customer homes
+                    related to the installation and technical service of LaPos
+                    devices in San Miguel de Tucumán.
                   </p>
                   <p>
                     Skills:
@@ -278,4 +273,4 @@ const Principal = (props) => {
   );
 };
 
-export default Principal;
+export default PrincipalEN;

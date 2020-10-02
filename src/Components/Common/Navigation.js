@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -6,9 +7,9 @@ import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Navigation = (props) => {
   return (
     <nav id="navContainer">
-      <a className="text-decoration-none col-12 col-sm-10" href="/">
+      <Link to={`/`} className="text-decoration-none col-12 col-sm-10">
         <div id="cvAuthor">Maximiliano Diaz Huerta</div>
-      </a>
+      </Link>
       <div
         onClick={() => props.setShowMenu(!props.showMenu)}
         id="menuButton"

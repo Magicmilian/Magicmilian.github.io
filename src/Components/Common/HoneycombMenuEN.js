@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./honeycombmenu.css";
 
-const HoneycombMenu = (props) => {
+const HoneycombMenuEN = (props) => {
   return (
     <div className="honeycomb-container">
       <ul className="honeycomb">
@@ -13,7 +13,7 @@ const HoneycombMenu = (props) => {
             src={process.env.PUBLIC_URL + "principal-honeycomb.jpg"}
             alt="Persona con mascara de neon"
           />
-          <div className="honeycomb-cell-title">Principal</div>
+          <div className="honeycomb-cell-title">Home</div>
           </Link>
         </li>
         <li className="honeycomb-cell col-12">
@@ -33,7 +33,7 @@ const HoneycombMenu = (props) => {
             src={process.env.PUBLIC_URL + "education-honeycomb.jpg"}
             alt="Taza de cafe"
           />
-          <div className="honeycomb-cell-title">Educacion</div>
+          <div className="honeycomb-cell-title">Education</div>
           </Link>
         </li>
         <li className="honeycomb-cell col-12">
@@ -53,7 +53,7 @@ const HoneycombMenu = (props) => {
             src={process.env.PUBLIC_URL + "contact-honeycomb.jpg"}
             alt="Telefono antiguo"
           />
-          <div className="honeycomb-cell-title">Contacto</div>
+          <div className="honeycomb-cell-title">Contact</div>
           </Link>
         </li>
         <li className="honeycomb-cell honeycomb-hidden"></li>
@@ -62,4 +62,4 @@ const HoneycombMenu = (props) => {
   );
 };
 
-export default HoneycombMenu;
+export default HoneycombMenuEN;
