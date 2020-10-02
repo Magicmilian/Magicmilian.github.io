@@ -22,7 +22,8 @@
   height: 160px;
   width: 160px;
   margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
   padding: 5px;
   background-color: rgba(255, 196, 0, 0.75);
   background: linear-gradient(
@@ -36,6 +37,7 @@
   -moz-box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.75);
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .skillElement p {
@@ -47,16 +49,20 @@
   margin-bottom: 0;
 }
 
+.skillElement:hover{
+  transform: scale(1.10);
+}
+
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
     .skillElement{
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
     }
     .skillElement p{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

@@ -80,7 +80,7 @@ const Principal = () => {
           </div>
         </div>
         <div className="col-12 col-md-6" id="titulos">
-          <h1 className="my-4">Web developer</h1>
+          <h1 className="my-4">Full Stack developer</h1>
           <h1>Licenciado en Administracion</h1>
           <div className="d-flex flex-wrap justify-content-center">
             <Link
@@ -95,8 +95,8 @@ const Principal = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-wrap mx-3 justify-content-around exoFont">
-        <article className="articlePrincipal col-sm-10 shadow p-4 my-4 bg-white rounded">
+      <div className="d-flex flex-wrap container justify-content-around exoFont">
+        <article className="articlePrincipal col-sm-12 shadow py-4 my-4 bg-white rounded">
           <h3 className="text-warning text-center">
             Informacion Basica{" "}
             <FontAwesomeIcon icon={faCommentDots} size="1x" />
@@ -132,7 +132,7 @@ const Principal = () => {
             aptitudes.{" "}
           </p>
         </article>
-        <article className="articlePrincipal col-sm-10  shadow p-4 my-4 bg-white rounded">
+        <article className="articlePrincipal col-sm-12  shadow p-4 my-4 bg-white rounded">
           <h3 className="text-warning text-center">
             Experiencia <FontAwesomeIcon icon={faBriefcase} size="1x" />
           </h3>

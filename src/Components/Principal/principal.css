@@ -55,12 +55,13 @@
 }
 
 .socialButtons{
-  transition: color .5s;
+  transition: all .5s;
   color: #333;
 }
 
 .socialButtons:hover{
   color: #d01dd6;
+  transform: scale(1.15);
 }
 
 /*MEDIA QUERIES*/

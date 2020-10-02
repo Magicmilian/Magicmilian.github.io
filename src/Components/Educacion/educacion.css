@@ -1,0 +1,54 @@
+.educationTitle {
+    font-size: 50px;
+    border-bottom: black double;
+    border-top: black double;
+    border-width: 6px;
+    background-color: rgba(255, 255, 255, 0.30);
+  }
+
+.educationContainer{
+    opacity: 0.9;
+}
+
+.imgContainer{
+    height: 100%;
+    object-fit: cover;
+}
+
+/*MEDIA QUERIES*/
+
+/*X-SMALL DEVICES PUBLICIDAD*/
+@media all and (max-width: 576px) {
+    .imgContainer{
+        max-height: 200px;
+    }
+    .educationTitle{
+        font-size: 35px;
+    }
+}
+
+/*SMALL DEVICES*/
+@media all and (min-width: 576px) and (max-width: 768px) {
+    .imgContainer{
+        max-height: 250px;
+    }
+    .educationTitle{
+        font-size: 40px;
+    }
+}
+
+/*MEDIUM DEVICES*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .educationTitle{
+        font-size: 45px;
+    }
+}
+
+/*LARGE DEVICES*/
+@media all and (min-width: 991px) and (max-width: 1200px) {
+    
+}
+  
+  /*XTRA LARGE DEVICES*/
+@media all and (min-width: 1200px) {
+}

@@ -7,6 +7,8 @@ import Navigation from "./Components/Common/Navigation";
 import Principal from "./Components/Principal/Principal";
 import Skills from "./Components/Skills/Skills"
 import HoneycombMenu from "./Components/Common/HoneycombMenu";
+import Educacion from "./Components/Educacion/Educacion";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -29,10 +31,10 @@ function App() {
         <Skills></Skills>
         </Route>
         <Route exact path="/education">
- 
+          <Educacion></Educacion>
         </Route>
         <Route exact path="/portfolio">
-
+          <Portfolio></Portfolio>
         </Route>
         <Route exact path="/contact">
    
