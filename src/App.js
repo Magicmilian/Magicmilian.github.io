@@ -32,7 +32,7 @@ function App() {
         classNames="honeycombmenu"
         unmountOnExit
       >
-        {englishLang === false ? <HoneycombMenu></HoneycombMenu> : <HoneycombMenuEN></HoneycombMenuEN>}
+        {englishLang === false ? <HoneycombMenu setShowMenu={setShowMenu} showMenu={showMenu}></HoneycombMenu> : <HoneycombMenuEN setShowMenu={setShowMenu} showMenu={showMenu}></HoneycombMenuEN>}
       </CSSTransition>
       <Switch>
         <Route exact path="/">
