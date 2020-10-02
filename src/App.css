@@ -10,11 +10,11 @@
 .honeycombmenu-enter-active {
   transition: all var(--timeout) ease-in-out;
   -webkit-transition: all var(--timeout) ease-in-out;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .honeycombmenu-exit {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .honeycombmenu-exit-active {
