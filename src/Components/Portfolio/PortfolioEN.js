@@ -56,7 +56,7 @@ const PortfolioEN = () => {
             <div className="card projectElement col-12 p-0">
               <a
                 className="text-decoration-none text-dark"
-                href="https://rollingnews.netlify.app/"
+                href="https://rolling-games.netlify.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -75,7 +75,7 @@ const PortfolioEN = () => {
                     Project carried out as a presentation of the second module
                     of the Full Stack course. Includes the design and
                     functionality of the front end. For content loading it use
-                    Local Storage as back end simulation.
+                    Local Storage as back end simulation. Details about loading the content on Github.
                   </p>
                 </div>
               </a>
