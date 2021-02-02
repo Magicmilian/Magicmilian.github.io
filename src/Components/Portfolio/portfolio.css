@@ -18,12 +18,33 @@
     border-radius: 1%;
 }
 
+.imgProjectCarousel{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1%;
+}
+
+.carousel-control-next span{
+    background-color: black;
+    border-radius: 50%;
+}
+
+.carousel-control-prev span{
+    background-color: black;
+    border-radius: 50%;
+}
+
+.projectLink :hover{
+    color: rgb(16, 47, 202);
+}
+
 
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
-    .imgProject{
+    .imgProject , .imgProjectCarousel{
         max-height: 250px;
     }
     .portfolioTitle{
@@ -33,7 +54,7 @@
 
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 768px) {
-    .imgProject{
+    .imgProject , .imgProjectCarousel{
         max-height: 300px;
     }
     .portfolioTitle{
@@ -43,7 +64,7 @@
 
 /*MEDIUM DEVICES*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-    .imgProject{
+    .imgProject , .imgProjectCarousel{
         max-height: 300px;
     }
     .portfolioTitle{
@@ -56,7 +77,7 @@
 
 /*LARGE DEVICES*/
 @media all and (min-width: 991px) and (max-width: 1200px) {
-    .imgProject{
+    .imgProject , .imgProjectCarousel{
         max-height: 320px;
     }
     .projectElement{
@@ -66,7 +87,7 @@
   
   /*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
-    .imgProject{
+    .imgProject , .imgProjectCarousel{
         max-height: 340px;
     }
     .projectElement{
