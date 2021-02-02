@@ -25,49 +25,49 @@ const Portfolio = () => {
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-1.jpg"}
-                      alt="First slide"
+                      alt="Slide Corcho Menu 1"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-2.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 2"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-3.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 3"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-4.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 4"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-5.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 5"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-6.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 6"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100 imgProjectCarousel"
                       src={process.env.PUBLIC_URL + "project-corchomenu-7.jpg"}
-                      alt="Third slide"
+                      alt="Slide Corcho Menu 7"
                     />
                   </Carousel.Item>
                 </Carousel>
